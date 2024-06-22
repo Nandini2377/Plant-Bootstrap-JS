@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plants-nuvosa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg  m-2 ">
+    <div class="container-fluid px-xl-5">
+      <a class="navbar-brand generic-text fs-3 fw-bold" href="#">My <span class="green-text  ">Plants</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto ms-5  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active generic-text-poppins fw-medium  ms-3" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active generic-text-poppins fw-medium  ms-3" aria-current="page" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active generic-text-poppins fw-medium ms-3" aria-current="page" href="#">Plants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active generic-text-poppins fw-medium ms-3" aria-current="page" href="#">Delivery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active generic-text-poppins fw-medium ms-3" aria-current="page" href="#">Help</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-4 rounded-5 search border-1 border-black " type="search"
+            placeholder="Search Products..." aria-label="Search">
+        </form>
+
+        <div class="me-4 hover-class"><img src="./images/nav/add-user.png" alt="user"></div>
+        <div class="me-4 hover-class position-relative"><img src="./images/nav/bag.png" alt="cart"><span
+            class="total-items">0</span></div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="row container-fluid mt-xl-5 position-relative justify-content-xl-start justify-content-center mt-0">
+    <div class="col-xl-3 col-11 col-sm-7 ms-5 d-xl-flex flex-xl-column justify-content-xl-evenly">
+      <div class="d-flex justify-content-xl-start justify-content-center">
+        <hr class="w-25  mb-0"><span>Love nature</span>
+      </div>
+      <div class="hero-heading generic-text green-text mt-xl-0 my-4  text-xl-start text-center">Take a new friend
+        to your home</div>
+
+      <div class=" mt-xl-0 my-4 d-flex gap-2 justify-content-center justify-content-xl-start">
+        <button class="journey-button py-md-2 px-md-4 ">Plant Care</button>
+        <button class="journey-button py-md-2 px-md-4">Buy a Plant</button>
+      </div>
+    </div>
+    <div class="col-xl-8 col-12 row d-xl-grid d-none">
+      <img src="./images/hero-section/pot.png" class="current-hero-img col-8 p-0" alt="pot">
+      <img src="./images/hero-section/leaves.png" class="col-4 p-0 ms-auto next-hero-img" alt="leaves">
+    </div>
+
+
+    <div class="d-flex justify-content-between w-50 d-xl-flex d-none ms-5 ">
+      <div class="  d-flex justify-content-center gap-5">
+        <img src="./images/hero-section/facebook.png" class="hover-class  h-75" alt="facebook">
+        <img src="./images/hero-section/instagram.png" alt="instagram" class="hover-class h-75">
+        <img src="./images/hero-section/pintrest.png" alt="pintrest" class="hover-class h-75">
+      </div>
+
+      <div class="h-100 d-flex align-items-center gap-2 ms-5"> <button class="plant-collection-button h-100"
+          id="hero-next"><img src="./images/hero-section/left-arrow.png" class="rotate-button" alt="prev"></button>
+
+        <div class="d-flex slider-slide">
+          <span class="h-100 flex-grow-1 rounded-5  "></span>
+          <span class="h-100 flex-grow-1 rounded-5 "></span>
+          <span class="h-100 flex-grow-1 rounded-5 "></span>
+          <span class="h-100 flex-grow-1 rounded-5 "></span>
+
+        </div>
+
+
+        <button class="plant-collection-button h-100" id="hero-prev"><img src="./images/hero-section/left-arrow.png"
+            alt="next"></button>
+      </div>
+    </div>
+
+
+    <div class="nature-container d-block d-xl-none ms-3">
+      <div class="nature-item ">
+        <img src="./images/hero-section/nature-road.jpeg" alt="image-road">
+      </div>
+      <div class="nature-item">
+        <img src="./images/hero-section/nature-rocks.jpeg" alt="image-nature">
+      </div>
+      <div class="nature-item">
+        <img src="./images/hero-section/nature-tree.jpeg" alt="image-tree">
+      </div>
+      <div class="nature-item">
+        <img src="./images/hero-section/leaves.png" alt="image-tree">
+      </div>
+    </div>
+
+    <div class="n-button-container d-flex justify-content-center gap-3 ms-3  mt-3 align-items-center ">
+      <button class=" d-block d-xl-none plant-collection-button" id="n-prevBtn"><img
+          src="./images/hero-section/left-arrow.png" class="rotate-button" alt="prev"></button>
+      <div class="d-flex slider-slide-sm d-xl-none">
+        <span class="h-100 flex-grow-1 rounded-5  "></span>
+        <span class="h-100 flex-grow-1 rounded-5  "></span>
+        <span class="h-100 flex-grow-1 rounded-5  "></span>
+        <span class="h-100 flex-grow-1 rounded-5  "></span>
+
+      </div>
+      <button class=" d-block d-xl-none plant-collection-button" id="n-nextBtn"><img
+          src="./images/hero-section/left-arrow.png" alt="next"></button>
+
+    </div>
+
+
+  </section>
+
+  <section class="container  margin-class-generic ">
+    <h1 class="generic-text  text-center  fs-2 fw-bold my-5  ">Plant Collections</h1>
+
+    <div class="row justify-content-end">
+      <div class="container-plant-collection col-md-10 col-12">
+        <div class="slider-wrapper">
+          <div class="img-list">
+          </div>
+        </div>
+      </div>
+
+      <div
+        class=" mt-4 m-md-0 mb-5 col-md-1 col-12 d-flex flex-row  flex-md-column align-items-center justify-content-center gap-3">
+        <button class="plant-collection-button " id="prev-plant-collection"><img
+            src="./images/hero-section/left-arrow.png" class="rotate-button" alt="prev"></button>
+        <button class="plant-collection-button " id="next-plant-collection"><img
+            src="./images/hero-section/left-arrow.png" alt="next"></button>
+      </div>
+    </div>
+
+  </section>
+
+  <section
+    class="container-fluid mx-auto  position-relative   row gap-5 justify-content-center   margin-class journey-section">
+    <div class="col-md-4 col-12 div "> <img src="./images/journey/plant.png" class="journey-plant" alt="plant"></div>
+    <div class="col-md-5 col-12 mt-md-5  text-center text-md-start p-2">
+      <h1 class="generic-text fw-medium  fw-bold mt-md-5 ">Our journey</h1>
+      <p class="generic-text my-lg-5 text-secondary fs-6">It is a long
+        established
+        fact that a reader will be distracted by the readable content of a
+        page when It is a long .It is a long established fact that a reader
+        will be distracted by the readable content of a is simply.</p>
+      <button class="journey-button">Get Started</button>
+    </div>
+    <img src="./images/journey/banana-tree.png" class="banana-leaf" alt="side-leaf">
+    <img src="./images/journey/leaves.png" class="journey-leaves" alt="side-leaf">
+  </section>
+
+  <section class="container mb-5 generic-text fs-2 px-4 advantages-section margin-class-generic">
+    <h1 class="my-lg-5 my-3 text-center text-lg-start  fw-bold">Our
+      advanatges</h1>
+    <div class="row   justify-content-lg-between  justify-content-center  ">
+
+      <div class="card mb-3 col-lg-4 col-12 adv-cards">
+        <div class="row no-gutters align-items-center ">
+          <div class="col-md-4">
+            <img src="./images/advantages/easy-order.png" class="card-img advantages-img" alt="order">
+          </div>
+          <div class="col-md-8 adv-card-body">
+            <div class="card-body">
+              <h5 class="card-title text-black fs-6">Easy
+                Order</h5>
+              <p class="card-text text-secondary fs-6">It is a long established fact that a reader
+                will be.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 col-lg-4 col-12 adv-cards">
+        <div class="row no-gutters align-items-center  ">
+          <div class="col-md-4">
+            <img src="./images/advantages/delivery.png" class="card-img advantages-img" alt="easy">
+          </div>
+          <div class="col-md-8 adv-card-body">
+            <div class="card-body">
+              <h5 class="card-title text-black fs-6">Fast Delivery</h5>
+              <p class="card-text text-secondary fs-6">It
+                is a long established fact that a reader will be.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 col-lg-4 col-12 adv-cards">
+        <div class="row no-gutters align-items-center ">
+          <div class="col-md-4">
+            <img src="./images/advantages/order.png" class="card-img advantages-img" alt="order">
+          </div>
+          <div class="col-md-8 adv-cards-body">
+            <div class="card-body">
+              <h5 class="card-title text-black fs-6">Easy
+                Order</h5>
+              <p class="card-text text-secondary fs-6">It
+                is a long established fact that a reader will be.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+    <img src="./images/advantages/leaves.png" class="advantages-leaves" alt="leaves">
+    <img src="./images/advantages/circle.png" class="advantages-circle" alt="circle">
+  </section>
+
+  <section class="row p-3 container mx-auto ask-us-container ask-section margin-class-generic">
+    <div class="ask-us-img"><img src="/images/ask-us/ask.png" class="ask-us " alt="bg-img"></div>
+    <div class="ask-us-div ">
+      <h2 class="generic-text mt-3 fw-semibold">Ask us anything</h2>
+      <div class="d-flex  flex-column gap-3 mt-5">
+        <input type="text" placeholder="name" class="ask-input-feild">
+        <input type="text" placeholder="phone" class=" ask-input-feild">
+        <input type="text" placeholder="e-mail" class="ask-input-feild">
+        <textarea cols="10" placeholder="message" class="ask-input-feild mt-5 "></textarea>
+      </div>
+
+      <div class="mt-5 d-flex justify-content-between align-items-center">
+        <button class="journey-button mb-3">send</button>
+
+        <div class="d-flex gap-4">
+          <img src="./images/hero-section/facebook.png" alt="facebook" class="hover-class">
+          <img src="./images/hero-section/instagram.png" alt="instagram" class="hover-class">
+          <img src="./images/hero-section/pintrest.png" alt="pintrest" class="hover-class">
+        </div>
+      </div>
+    </div>
+
+    <img src="./images/ask-us/leaves.png" class="ask-leaves" alt="leaves">
+  </section>
+
+  <section class="container choose-section">
+    <h1 class="generic-text  my-4 text-center fw-bold">Choosing the right
+      plant</h1>
+
+    <div class="row justify-content-around ">
+      <div class="col-md-4 col-12 mt-4 ">
+        <div class="card border-0 choose-plants gap-2 ">
+          <div class="card-choose  d-flex align-items-center justify-content-center"> <img
+              src="./images/choose-plants/plant.png" class="card-img-top" alt="plant"></div>
+
+          <div class="card-body p-0">
+            <h5 class="card-title generic-text fs-4   ">Garden Plants</h5>
+            <p class="card-text choose-plants-text generic-text">It is
+              a long established fact that a reader will be distracted by the
+              .</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 mt-4 ">
+        <div class="card border-0 choose-plants gap-2 ">
+          <div class="card-choose d-flex align-items-center justify-content-center"> <img
+              src="./images/choose-plants/cactus.png" class="card-img-top" alt="plant">
+          </div>
+          <div class="card-body p-0">
+            <h5 class="card-title generic-text fs-4    ">Indoor
+              Plants</h5>
+            <p class="card-text choose-plants-text generic-text">It is a
+              long established fact that a reader will be distracted by the
+              .</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 mt-4 ">
+        <div class="card border-0 choose-plants  gap-2">
+          <div class="card-choose d-flex align-items-center justify-content-center"> <img
+              src="./images/choose-plants/plant.png" class="card-img-top" alt="plant"></div>
+          <div class="card-body p-0">
+            <h5 class="card-title generic-text fs-4   ">Home Plants</h5>
+            <p class="card-text choose-plants-text generic-text">It is
+              a long established fact that a reader will be distracted by the
+              .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./images/plant-care/circle.png" class="choose-circle" alt="side-leaves">
+  </section>
+
+  <section class="container margin-class-generic client-section">
+    <h1 class="generic-text text-md-start text-center mx-auto ms-md-0 fw-bold mt-5">What clients talk about us</h1>
+    <div class="carousel-container container-fluid  overflow-hidden client-content">
+      <div class="client" data-id="0">
+        <div class="d-flex  flex-md-row flex-column  justify-content-md-center align-items-center ">
+          <img src="./images/hero-section/client.png" class="client-img" alt="client">
+          <div class="client-review"> It is a long established fact that a
+            reader will be distracted by the readable
+            content of a page when It is a long .It is a long .It is a long
+            established fact that a reader will be . It
+            is
+            a long established fact that a reader .</div>
+          <div class="buttons"><button class="j-button " onclick="next()"><img src="images/hero-section/left-arrow.png"
+                alt="next"></button></div>
+        </div>
+      </div>
+      <div class="client" data-id="1">
+        <div class="d-flex flex-md-row flex-column  justify-content-md-center align-items-center">
+          <img src="./images/hero-section/client.png" class="client-img">
+          <div class="client-review"> It is a long established fact that a
+            reader will be distracted by the readable
+            content of a page when It is a long .It is a long .It is a long
+            established fact that a reader will be . It
+            is
+            a long established fact that a reader .</div>
+          <div class="buttons"><button class="j-button " onclick="next()"><img src="images/hero-section/left-arrow.png"
+                alt="next"></button></div>
+        </div>
+      </div>
+      <div class="client" data-id="2">
+        <div class="d-flex flex-md-row flex-column  justify-content-md-center align-items-center ">
+          <img src="./images/hero-section/client.png" alt="client" class="client-img">
+          <div class="client-review"> It is a long established fact that a
+            reader will be distracted by the readable
+            content of a page when It is a long .It is a long .It is a long
+            established fact that a reader will be . It
+            is
+            a long established fact that a reader .</div>
+          <div class="buttons"><button class="j-button " onclick="next()"><img src="images/hero-section/left-arrow.png"
+                alt="next"></button></div>
+        </div>
+      </div>
+    </div>
+
+    <img src="./images/plant-care/circle.png" class="client-circle" alt="side-leaves">
+    <img src="./images/ask-us/client-leaves.png" class="client-leaves" alt="leaves">
+    <img src="./images/ask-us/leaf.png" class="client-leaf" alt="leaves">
+  </section>
+
+  <section class=" container care-section  mt-5">
+    <div class="row hap-5">
+      <div class="col-md-6 col-12 order-md-1 order-2 my-auto ">
+        <h1 class="generic-text fw-bold text-start ms-3  mt-3  ">Plant Care</h1>
+        <p class="ms-3  my-3 text-secondary me-5 generic-text fs-6">
+          It is a long established fact that a reader will be distracted by
+          the
+          readable content of a page when It is a long .It is a long
+          established
+          fact that a reader will be distracted by the readable content of a
+          is
+          simply.
+          a page when It is a long .It is a long established fact that a
+          reader
+          will be distracted by the readable content of a is simply.
+        <div><button class="journey-button ms-3 ">Read the
+            blog</button></div>
+      </div>
+
+      <div class="col-md-6 col-12 my-auto order-md-2 order-1 ms-0 p-sm-0 p-lg-0 p-0"><img
+          src="./images/plant-care/girl-plant.png" class="img-fluid px-3 py-5rounded-5 " alt="girl-garden"></div>
+
+    </div>
+    <img src="./images/plant-care/leaves.png" class="care-leaf" alt="side-leaves">
+    <img src="./images/plant-care/circle.png" class="care-circle" alt="side-leaves">
+  </section>
+
+  <section class="container-fluid footer-section margin-class-generic">
+    <div class=" row   justify-content-between  align-items-center">
+
+      <div class="col-md-4 col-12 ps-5 pe-5 pt-5 pb-1 ms-md-5">
+        <div class="text-white "><img src="./images/footer/nuvosa.png" class="footer-img hover-class" alt="footer-leaf"></div>
+        <div class="text-white mt-3 ">It is a long established fact that a
+          reader will be distracted by the readable
+          content of a page when It is a long .It is a long established fact
+          that a reader will be distracted by the.
+        </div>
+        <div class="d-flex my-4 gap-2">
+          <div><img src="./images/footer/instagram.png" alt="insta" class="hover-class"></div>
+          <div><img src="./images/footer/facebook.png" alt="facebook" class="hover-class"></div>
+          <div><img src="./images/footer/twitter.png" alt="twitter" class="hover-class"></div>
+          <div><img src="./images/footer/youtube.png" alt="youtube" class="hover-class"></div>
+        </div>
+
+      </div>
+
+      <div class="text-white col-md-6 col-12 py-md-5  p-3">
+        <table class="table-footer">
+          <tr>
+            <th class="fs-4 fw-medium">Services</th>
+            <th class="fs-4 fw-medium">Support</th>
+            <th class="fs-4 fw-medium">Company</th>
+          </tr>
+
+          <tr>
+            <td class="hover-class">Gardening</td>
+            <td class="hover-class">Gardening</td>
+            <td class="hover-class">Gardening</td>
+          </tr>
+
+          <tr>
+            <td class="hover-class">Low Service</td>
+            <td class="hover-class">Low Service</td>
+            <td class="hover-class">Low Service</td>
+          </tr>
+
+          <tr>
+            <td class="hover-class">Leaf Removal</td>
+            <td class="hover-class">Leaf Removal</td>
+            <td class="hover-class">Leaf Removal</td>
+          </tr>
+
+          <tr>
+            <td class="hover-class">Decoration</td>
+            <td class="hover-class">Decoration</td>
+            <td class="hover-class">Decoration</td>
+          </tr>
+
+          <tr>
+            <td class="hover-class">Trimming</td>
+
+            <td class="hover-class">Trimming</td>
+            <td class="hover-class">Trimming</td>
+          </tr>
+
+        </table>
+      </div>
+
+    </div>
+
+    <hr class="footer-hr">
+    <div
+      class="d-flex flex-md-row flex-column text-white justify-content-md-between px-5 justify-content-center align-items-center pb-3 text-center">
+
+      <div>Copyright © 2023 nuvosa, All rights reserved.</div>
+
+      <div class="d-flex flex-sm-row flex-column justify-content-center gap-md-3 gap-0">
+        <div>Terms of use</div>
+        <div>Copyright & trademark</div>
+        <div>Policy</div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <script src="./hero-carousal-small.js"></script>
+  <script src="./client-carousal.js"></script>
+  <script src="./hero-carousal.js"></script>
+  <script src="./plant-collection.js"></script>
+  <script src="./scroll-animation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
